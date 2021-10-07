@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
+    username: hr
+    password: hr
+  jpa:    show-sql: true
+management:  endpoints:    web:      exposure:        include:        - "*"
+  endpoint:
+     shutdown:
+       enabled: true        
+info:
+   build:
+     artificatId: 'com.example:student-service-rest-api:jar:0.0.1-SNAPSHOT'
+     groupId: 'com.example' 
+     version: '0.0.1-SNAPSHOT'
+   java:
+     version:8.0
+
+ 
